@@ -1,4 +1,4 @@
-module rabbit
+module github.com/rabbit-rm/rabbit/v0
 
 go 1.22
 
