@@ -7,7 +7,7 @@ import (
 type BusinessLogicFunc func(engine *gin.Engine) error
 
 func CreateEngine(c *Config, businessLogic BusinessLogicFunc, options ...Option) {
-	opts := loadOptions(options...)
+	// opts := loadOptions(options...)
 
 }
 
