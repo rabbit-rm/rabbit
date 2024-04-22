@@ -1,4 +1,4 @@
-package viperKit
+package viperToolkit
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package errorKit
+package errorToolkit
 
 import (
 	"errors"

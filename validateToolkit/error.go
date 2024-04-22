@@ -1,4 +1,4 @@
-package validateKit
+package validateToolkit
 
 /*func TransErrors(v *validator.Validate, trans locales.Translator, err error) string {
 	if err != nil {

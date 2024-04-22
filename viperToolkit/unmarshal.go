@@ -1,4 +1,4 @@
-package viperKit
+package viperToolkit
 
 import (
 	"github.com/mitchellh/mapstructure"

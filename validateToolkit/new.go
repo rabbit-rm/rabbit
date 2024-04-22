@@ -1,4 +1,4 @@
-package validateKit
+package validateToolkit
 
 import (
 	"github.com/go-playground/validator/v10"

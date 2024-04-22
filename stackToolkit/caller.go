@@ -1,4 +1,4 @@
-package stackKit
+package stackToolkit
 
 import (
 	"fmt"

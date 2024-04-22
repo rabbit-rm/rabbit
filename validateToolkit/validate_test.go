@@ -1,4 +1,4 @@
-package validateKit
+package validateToolkit
 
 import (
 	"errors"

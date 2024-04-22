@@ -1,8 +1,8 @@
-package jwtKit
+package jwtToolkit
 
 import (
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/rabbit-rm/rabbit/errorKit"
+	"github.com/rabbit-rm/rabbit/errorToolkit"
 )
 
 func NewWithClaims(secretKey interface{}, signingMethod jwt.SigningMethod, claims jwt.Claims, opts ...jwt.TokenOption) (string, error) {
@@ -15,12 +15,12 @@ func ParseWithClaims[T jwt.Claims](tokenString string, claims T, keyFunc jwt.Key
 		return
 	}
 	if !token.Valid {
-		err = errorKit.New("invalid token")
+		err = errorToolkit.New("invalid token")
 		return
 	}
 	var ok bool
 	if value, ok = token.Claims.(T); !ok {
-		err = errorKit.New("invalid claims type(%T)", token.Claims)
+		err = errorToolkit.New("invalid claims type(%T)", token.Claims)
 		return
 	}
 	return

@@ -1,4 +1,4 @@
-package ginKit
+package ginToolkit
 
 import (
 	"github.com/gin-gonic/gin"

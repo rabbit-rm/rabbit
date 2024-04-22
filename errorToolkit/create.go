@@ -1,10 +1,10 @@
-package errorKit
+package errorToolkit
 
 import (
 	"fmt"
 
 	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/rabbit-rm/rabbit/stackKit"
+	"github.com/rabbit-rm/rabbit/stackToolkit"
 )
 
 const skip = 1
@@ -19,7 +19,7 @@ func NewWithCaller(format string, args ...interface{}) error {
 }
 
 func addCaller(format string) string {
-	return fmt.Sprintf("%s -> %s", stackKit.Caller(skip), format)
+	return fmt.Sprintf("%s -> %s", stackToolkit.Caller(skip), format)
 }
 
 // Wrap 包裹其他错误，用于构造多级错误，包含堆栈信息

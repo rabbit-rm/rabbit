@@ -1,4 +1,4 @@
-package jwtKit
+package jwtToolkit
 
 import (
 	"fmt"

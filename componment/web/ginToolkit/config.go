@@ -1,4 +1,4 @@
-package ginKit
+package ginToolkit
 
 type Config struct {
 	Mode         string
